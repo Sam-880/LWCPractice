@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Two Way Data Binding">
+        <p> Welcome User</p>
+        <lightning-input lebal="Enter Your Name" name="n1" onchange={nameHandler}></lightning-input>
+        <h1>
+            Your Name is :{name}
+        </h1><br>
+        <lightning-input lebal="Enter Your Age" name="n2" onchange={ageHandler}></lightning-input>
+        <h1>
+            Your Age is :{age}
+        </h1>
+
+    </lightning-card>
+</template>

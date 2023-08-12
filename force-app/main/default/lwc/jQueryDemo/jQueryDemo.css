@@ -1,0 +1,22 @@
+.panel,
+.flip {
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    border: solid 1px;
+    color: white;
+    cursor: pointer;
+}
+
+.panel {
+    padding: 50px;
+    display: none;
+}
+
+.innerDiv {
+    position: absolute;
+}
+
+.important {
+    background-color: red;
+}

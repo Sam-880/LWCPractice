@@ -1,0 +1,12 @@
+<template>
+
+<div class="calci">
+    <lightning-card title="Simple Calculator">
+
+        <lightning-input type="number" label="Enter Your First Number" name="n1" onchange={firstNumberHandler}></lightning-input><br>
+        <lightning-input type="number" label="Enter Your Second Number" name="n2" onchange={secondNumberHandler}></lightning-input><br>
+        <lightning-button variant="success" label="Sum" onclick={handleClick} ></lightning-button><br>
+        <p> Sum is :{result} </p>
+    </lightning-card> 
+</div>
+</template>

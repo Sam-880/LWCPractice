@@ -1,0 +1,16 @@
+<aura:component>
+    <lightning:buttonIcon iconName="utility:notification" alternativeText="notification" variant="bare"/>
+     <lightning:buttonIcon iconName="utility:setup" alternativeText="Setting" variant="bare"/>
+     <lightning:buttonIcon iconName="utility:help" alternativeText="help" variant="bare"/>
+    <lightning:buttonMenu alternativeText="Menu">
+        <lightning:menuItem value="nopp" label="New Opportunity"/>
+        <lightning:menuSubheader label="DML"/>
+          <lightning:menuItem value="edt" label="Edit"/>
+          <lightning:menuItem value="Del" label="Delete"/>
+        <lightning:menuSubheader label="Quick Create"/>
+          <lightning:menuItem value="edt" label="New Contact"/>
+          <lightning:menuItem value="Del" label="New Case"/>
+     
+    </lightning:buttonMenu>
+     <lightning:buttonIconStateful iconName="utility:notification" alternativeText="notification" onclick="{!c.callme}" selected="{!c.selected}"></lightning:buttonIconStateful>  
+</aura:component>

@@ -1,0 +1,27 @@
+<template>
+   
+    
+    <lightning-card title="Getter and templete looping">
+    <!-- <p> {firstNumber + secondNumber}</p>
+        this type of calculation like data manupulation we can not do direlcty in lwc-->
+        <p> {accessElecemt} </p>
+        <p> {manupulation} </p>
+
+    </lightning-card> 
+    <div class="d1">
+    <!-- <lightning-card title="Indian cricket Player">
+       
+        <template for:each={players} for:item="id">
+        <p key={id} class="slds-box slds-box_small"> {id} </p>
+       </template>
+    
+    </lightning-card >  -->
+    <lightning-card title="Indian cricket Players Team">
+       
+        <template for:each={team} for:item="id">
+        <p key={id} class="slds-box slds-box_small"> {id.Name}      {id.Age}       {id.Runs} </p>
+       </template>
+    
+    </lightning-card > 
+    </div>
+</template>

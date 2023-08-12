@@ -1,0 +1,18 @@
+<apex:page >
+ <apex:sectionHeader title="Position Edit" subtitle="New Position"/>
+        <apex:form >
+        
+            <apex:PageBlock title="Account Details" id="accBlock">
+            </apex:PageBlock>
+            
+            <apex:PageBlock title="Contact Records" id="conBlock">
+            </apex:PageBlock>
+            
+            <apex:PageBlock title="Opportunity Records" id="opptyBlock">
+            </apex:PageBlock>
+            
+            <apex:PageBlock title="Case Records" id="caseBlock">
+            </apex:PageBlock>
+            
+        </apex:form>
+</apex:page>

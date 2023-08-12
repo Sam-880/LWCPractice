@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <!-- lwc button -->
+        <lightning-button label={buttonLabel} varient="Brand" onclick={handleShow}>
+        </lightning-button><br>
+
+        <template lwc:if={showDataTable}>
+            <!-- LWC datatabel -->
+            <!-- LWC Opportunity table -->
+            <lightning-datatable key-field="Id" data={opportunityData} columns={columns1} hide-checkbox-column>
+            </lightning-datatable>
+            <br>
+            <!-- LWC Contact table -->
+            <lightning-datatable key-field="Id" data={contactData} columns={columns2} hide-checkbox-column>
+            </lightning-datatable>
+        </template>
+
+
+
+    </lightning-card>
+</template>

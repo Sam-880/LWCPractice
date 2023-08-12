@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="emplstname" type="String" default="Tanmay"/>
+    <aura:attribute name="empfstname" type="String" />
+    
+    <lightning:input label="Employee Last Name" value="{!v.emplstname}"/>
+    <lightning:input label="Employee First Name" value="{!v.empfstname}"/>
+    <lightning:input label="Employee DOB" type="Date" />
+    <lightning:input label="Employee Email" type="Email" />
+    <lightning:input label="Employee Phone" type="Phone" />
+    <lightning:input label="Employee Fav. Color" type="Color" />
+    <lightning:input label="Employee Password" type="Password" required="true"/>
+</aura:component>

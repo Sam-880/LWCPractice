@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Conditional Directives With If:True|False">
+        <lightning-button label={onClickButtonlabel} variant="brand" onclick={clickHandler}>
+        </lightning-button>
+    </lightning-card>
+    <templete if:true={isVisible}>
+        <lightning-card title="If:true|false">
+            {myTitle}
+        </lightning-card>
+    </templete>
+</template>

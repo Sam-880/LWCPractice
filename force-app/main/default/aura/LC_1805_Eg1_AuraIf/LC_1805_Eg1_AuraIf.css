@@ -1,0 +1,28 @@
+.THIS.box {
+    width:300px;
+    height:150px;
+    border:3px;
+    margin-left:650px;
+    border-style:dotted;
+    border-color:red;
+    background-color:#15AAAF;
+}
+.THIS.logo{
+    margin-top: 25px;
+    margin-left:650px;
+}
+
+.THIS.ltgcrd{
+    width:300px;
+    height:250px;
+    border:3px;
+    margin-left:650px;
+    background-color:#15AAAF;
+    padding:10px;
+}
+
+.THIS .btn{
+    border:3px;
+    border-color:red;
+    color:red;
+}

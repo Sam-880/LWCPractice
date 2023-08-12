@@ -1,0 +1,11 @@
+<aura:component >
+	<lightning:card title="Employee Details">
+    	<aura:set attribute="footer">
+            <lightning:button label="Submit" onclick="{!c.callMe}"/>
+        </aura:set>
+        
+        <lightning:input label="Enter Employee Name" aura:id="empname" type="Text"/>
+        <lightning:input label="Enter Employee Age" aura:id="empage" type="Number"/>
+        <lightning:input label="Enter Employee Salary" aura:id="empsalary" type="Decimal"/>
+    </lightning:card>
+</aura:component>

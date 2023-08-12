@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Employee Details By Education">
+        <lightning-input name="enter-search" label="Search Account By Industry" type="search" onclick={accountHandler}></lightning-input>
+    </lightning-card>
+    <lightning-card title="Accound Details Result">
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    show-row-number-column
+                    row-number-offset={rowOffset}
+                    suppress-bottom-bar
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

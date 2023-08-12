@@ -1,0 +1,16 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:attribute name="empname" type="String"/>
+    <aura:attribute name="age" type="Integer"/>
+    <aura:attribute name="salary" type="Decimal"/>
+    
+    <lightning:card title="Employee Information">
+         Employee Name    : {!v.empname}<br/>
+      	 Employee Age     : {!v.age}<br/>
+         Employee Salary  : {!v.salary}<br/>
+        
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.callMe}"/>
+            <lightning:button label="Clear" onclick="{!c.clearMe}"/>          
+        </aura:set>
+    </lightning:card>
+</aura:component>

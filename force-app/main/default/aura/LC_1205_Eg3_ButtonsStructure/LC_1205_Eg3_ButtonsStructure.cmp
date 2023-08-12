@@ -1,0 +1,8 @@
+<aura:component>
+	<lightning:button label="Follow" iconPosition="right" variant="inverse" iconName="utility:add"/>
+    <lightning:buttonGroup>
+    	<lightning:button label="New Contact"/>
+        <lightning:button label="New Case"/>
+        <lightning:button label="New Note"/>
+    </lightning:buttonGroup>
+</aura:component>

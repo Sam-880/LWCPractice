@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="College Level">
+
+        <p>{status}</p>
+
+        <template for:each={collegeInformation} for:item="clg">
+            <p key={clg.name}>
+            {clg.name} {clg.fees} {clg.seats}
+            </p>
+        </template>
+    </lightning-card>
+</template>

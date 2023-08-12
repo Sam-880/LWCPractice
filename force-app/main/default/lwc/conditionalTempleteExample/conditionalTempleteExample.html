@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Condition With checkbox">
+        <lightning-input type="checkbox" label="information Reader" onchange={checkBoxHandler}></lightning-input>
+
+        <template if:true={statusOfCheckbox}>
+            <p> The value of Checkbox is True and u r a Reader.</p>
+
+        </template>
+        <template if:false={statusOfCheckbox}>
+            <p> Status is False Please check the checkbox</p>
+
+        </template>
+    </lightning-card>
+    <lightning-card title="Lightning Button with condition">
+        <lightning-button variant="brand" label="Click Me" onclick={clickMeHnadler}></lightning-button>
+
+        <template if:true={clickHere}>
+            <p> Welcome User!!!!!!!!!</p>
+
+        </template>
+        <template if:false={clickHere}>
+            <p> Please click Here to view</p>
+
+        </template>
+    </lightning-card>
+    <lightning-card title="Student Iterator">
+
+        <template iterator:it={students}>
+            <p key={it.value.rollNmber}>
+                <template if:true={it.first}>
+                    <p>List Start from Here</p>
+                </template>
+                {it.value.rollNmber} {it.value.name} {it.value.age}
+                <template if:true={it.last}>
+                    <p>List Ends Here</p>
+                </template>
+            </p>
+
+        </template>
+    </lightning-card>
+    <lightning-card title="Child Component">
+        <c-simple-calculator></c-simple-calculator>
+    </lightning-card>
+
+
+
+</template>
