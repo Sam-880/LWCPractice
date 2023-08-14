@@ -4,6 +4,7 @@ import updatePrimaryContact from '@salesforce/apex/ContactClass.updatePrimaryCon
 import { NavigationMixin } from 'lightning/navigation';
 import { encodeDefaultFieldValues } from "lightning/pageReferenceUtils";
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { refreshApex } from '@salesforce/apex';
 
 
 const actions = [
@@ -20,7 +21,7 @@ const columns = [
 ];
 export default class DataTableWithRowAction extends NavigationMixin(LightningElement) {
     @api recordId; // this will store current page record id
-    contactData;
+    @track contactData = [];
     columns = columns;
 
 
@@ -70,7 +71,7 @@ export default class DataTableWithRowAction extends NavigationMixin(LightningEle
             },
         });
         // eval("$A.get('e.force:refreshView').fire();");
-
+        return refreshApex(this.contactData);
 
     }
     // this method will assign primary contact
